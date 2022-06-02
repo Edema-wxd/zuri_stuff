@@ -20,25 +20,25 @@ while True: # The main game loop.
 
     # Display what the player chose:
     if playerMove == 'r':
-        print('n\ You play ROCK versus...')
+        print('\n You play ROCK versus...')
     elif playerMove == 'p':
-        print('n\ You play PAPER versus...')
+        print('\n You play PAPER versus...')
     elif playerMove == 's':
-        print('n\ You play SCISSORS versus...')
+        print('\n You play SCISSORS versus...')
 
     # Display what the computer chose:
     randomNumber = random.randint(1, 3)
     if randomNumber == 1:
         computerMove = 'r'
-        print('n\ computer plays ROCK')
+        print(' computer plays ROCK \n')
     elif randomNumber == 2:
         computerMove = 'p'
-        print('n\ computer plays PAPER')
+        print(' computer plays PAPER \n')
     elif randomNumber == 3:
         computerMove = 's'
-        print('n\ computer plays SCISSORS')
+        print(' computer plays SCISSORS \n')
 
-    # Display and record the win/loss/tie:
+    # Display and record the wi\nlos\ntie:
     if playerMove == computerMove:
         print('It is a tie!')
         ties = ties + 1
@@ -60,5 +60,3 @@ while True: # The main game loop.
     elif playerMove == 's' and computerMove == 'r':
         print('You lose!')
         losses = losses + 1
-
-
